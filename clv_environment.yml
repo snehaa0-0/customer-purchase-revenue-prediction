@@ -1,0 +1,27 @@
+name: clv_environment
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pandas             # For data manipulation
+  - numpy              # For numerical operations
+  - lifetimes              
+  - scikit-learn       # Core machine learning library including Random Forest
+  - xgboost            # For Gradient Boosting
+  - lightgbm           # Optional: LightGBM for another gradient boosting option
+  - matplotlib         # For plotting static graphs
+  - seaborn            # Data visualization library built on matplotlib
+  - plotly             # Interactive plots for data exploration
+  - jupyterlab         # Interactive notebook environment
+  - ipykernel          # Necessary for running notebooks
+  - nbformat           # Notebook format support
+  - optuna             # For hyperparameter tuning
+  - shap               # Model explainability (for Random Forest and XGBoost)
+  - pip
+  - pip:
+      - pycaret        # Low-code machine learning library (optional for rapid model prototyping)
+      - mlflow         # Experiment tracking and versioning
+      - imbalanced-learn # For handling imbalanced data (SMOTE, ADASYN)
+      - pyod           # Outlier detection to identify fraud or anomalies
+      - sqlalchemy 
